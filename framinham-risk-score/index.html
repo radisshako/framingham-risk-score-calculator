@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page head-->
+    <head>
+        <!--meta data -->
+        <meta charset="utf-8">
+        <!--Page title-->
+        <title>Framingham Risk Score</title>
+        <!--Link to Js file-->
+        <script src="part2.js" defer></script>
+        <!-- link to the css stylesheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+    </head>
+    <!--Page Body-->
+    <body>
+        <!--Header of page-->
+        <h1 id="main_header">Framingham Risk Score</h1>
+        <div class="divs" id="div1">
+            <!--Main form-->
+            <form id="main_form">
+                <div class="page" id="page1">
+                    <!--Sub header of the page-->
+                    <h2>Please enter your age and gender</h2>
+                    <!--All the age range inputs and outputs-->
+                    <label for="ageInput" id="ageLabel">Age(20-79)</label>
+                    <input type="range" id="ageInput" value="20" min="20" max="79" name="ageInput" oninput="this.nextElementSibling.value = this.value" required>
+                    <output>20</output>
+
+                    <!--Female and male radio buttons and labels-->
+                    <label for="male">Male</label>
+                    <input type="radio"  id="male" name="genderInput" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="genderInput" value="female" required>
+                    <input id="submit1" onclick="pageOne(); return false;" type="submit" value="Submit" method="get">
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
